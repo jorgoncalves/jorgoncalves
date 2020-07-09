@@ -1,0 +1,6 @@
+.customBottomm {
+  display: flex;
+  min-height: 80px;
+  justify-content: center;
+  align-items: center;
+}
