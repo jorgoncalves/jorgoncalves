@@ -9,15 +9,22 @@ import Navbar from './Views/Navbar/Navbar';
 import Footer from './Views/Footer/Footer';
 
 import './App.css';
+import UnderDevelopment from './Views/UnderDevelopment/UnderDevelopment';
 
 UIkit.use(Icons);
 
 export default function App() {
   return (
     <>
-      <Navbar />
-      <Presentation />
-      <Footer />
+      {true ? (
+        <UnderDevelopment />
+      ) : (
+        <>
+          <Navbar />
+          <Presentation />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
