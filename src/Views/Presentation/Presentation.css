@@ -1,0 +1,26 @@
+.presentationContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+.profilePic{
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+}
+
+.presentationText{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  padding: 100px;
+  text-align: justify;
+}

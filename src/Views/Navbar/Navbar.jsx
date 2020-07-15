@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import UIkit from 'uikit';
+// import UIkit from 'uikit';
 
 import './Navbar.css';
 
@@ -10,10 +11,13 @@ export default function Navbar() {
       <div className="uk-navbar-center">
         <ul className="uk-navbar-nav">
           <li className="uk-active">
-            <a href="#">Who am I</a>
+            <Link to="/">Who am I</Link>
           </li>
           <li>
-            <a href="#">Contacts</a>
+            <Link to="/experience">Experience</Link>
+          </li>
+          <li>
+            <Link to="/contacts">Contacts</Link>
           </li>
         </ul>
       </div>
