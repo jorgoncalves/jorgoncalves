@@ -1,5 +1,6 @@
 {
-  "start_url": "https://jorgoncalves.github.io/site/",
+  "start_url": "/site/",
+  "scope":"/site/",
   "display": "standalone",
   "icons": [
     {
