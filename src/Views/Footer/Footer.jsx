@@ -12,8 +12,8 @@ export default function Footer() {
 
   return (
     <div className="uk-position-bottom customBottomm uk-background-muted">
-      {icons.map((icon) => (
-        <Icon icon={icon.icon} link={icon.link} />
+      {icons.map((icon, index) => (
+        <Icon key={index} icon={icon.icon} link={icon.link} />
       ))}
     </div>
   );

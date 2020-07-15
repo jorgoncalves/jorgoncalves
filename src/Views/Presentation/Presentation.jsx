@@ -7,7 +7,7 @@ import profilePic from '../../img/HLF_8974.JPG';
 export default function Presentation() {
   return (
     <div className="presentationContainer">
-      <img className="profilePic" src={profilePic} />
+      <img className="profilePic" src={profilePic} alt="this is Jorge Gonçalves profile" />
       <div className="presentationText">
         <h1 className="uk-heading-small">Lorem ipsum</h1>
         <p>

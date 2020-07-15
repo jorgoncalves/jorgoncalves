@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 // import UIkit from 'uikit';
 
@@ -10,13 +10,23 @@ export default function Navbar() {
     <nav className="uk-navbar-container" uk-navbar="true">
       <div className="uk-navbar-center">
         <ul className="uk-navbar-nav">
-          <li className="uk-active">
+          <li
+            className={useLocation().pathname === '/' ? 'uk-active activeCustom' : ''}
+          >
             <Link to="/">Who am I</Link>
           </li>
-          <li>
+          <li
+            className={
+              useLocation().pathname === '/experience' ? 'uk-active activeCustom' : ''
+            }
+          >
             <Link to="/experience">Experience</Link>
           </li>
-          <li>
+          <li
+            className={
+              useLocation().pathname === '/contacts' ? 'uk-active activeCustom' : ''
+            }
+          >
             <Link to="/contacts">Contacts</Link>
           </li>
         </ul>

@@ -9,6 +9,9 @@ export default function Icon(props) {
       href={props.link}
       target="_blank"
       uk-icon={`icon: ${props.icon}`}
-    ></a>
+      rel="noopener noreferrer"
+    >
+      {' '}
+    </a>
   );
 }
