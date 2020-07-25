@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Presentation.css';
 
-import profilePic from '../../img/HLF_8974.JPG';
+import profilePic from '../../img/profileBG.png';
 
 export default function Presentation() {
   return (

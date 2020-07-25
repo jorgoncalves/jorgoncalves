@@ -1,3 +1,9 @@
+:root {
+  --nav-footer-bg-color: rgb(240, 240, 240);
+  --main-bg-color: #f8f8f8;
+  --nav-hover-color: rgb(102, 102, 102)
+}
+
 html,
 body,
 #root {
@@ -5,7 +11,7 @@ body,
   width: 100vw;
   margin: 0;
   overflow: hidden;
-  background-color: #f8f8f8;
+  background-color: var(--main-bg-color);
 }
 
 #root {

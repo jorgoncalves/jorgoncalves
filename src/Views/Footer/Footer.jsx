@@ -11,7 +11,7 @@ export default function Footer() {
   ]);
 
   return (
-    <div className="uk-position-bottom customBottomm uk-background-muted">
+    <div className="uk-position-bottom customBottomm footerCustom">
       {icons.map((icon, index) => (
         <Icon key={index} icon={icon.icon} link={icon.link} />
       ))}

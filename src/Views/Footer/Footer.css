@@ -1,3 +1,7 @@
+.footerCustom {
+  background-color: var(--nav-footer-bg-color) !important;
+}
+
 .customBottomm {
   display: flex;
   min-height: 80px;

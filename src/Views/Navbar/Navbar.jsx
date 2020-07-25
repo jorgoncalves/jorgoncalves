@@ -7,27 +7,59 @@ import './Navbar.css';
 
 export default function Navbar() {
   return (
-    <nav className="uk-navbar-container" uk-navbar="true">
+    <nav className="uk-navbar-container navbarCustom" uk-navbar="true">
       <div className="uk-navbar-center">
         <ul className="uk-navbar-nav">
           <li
-            className={useLocation().pathname === '/' ? 'uk-active activeCustom' : ''}
+            className={[
+              'box',
+              useLocation().pathname === '/' ? 'uk-active activeCustom' : ''
+            ].join(' ')}
           >
-            <Link to="/">Who am I</Link>
+            <Link
+              to="/"
+              className={
+                useLocation().pathname === '/' ? '' : 'custom-underline'
+              }
+            >
+              Who am I
+            </Link>
           </li>
           <li
-            className={
-              useLocation().pathname === '/experience' ? 'uk-active activeCustom' : ''
-            }
+            className={[
+              'box',
+              useLocation().pathname === '/experience'
+                ? 'uk-active activeCustom'
+                : ''
+            ].join(' ')}
           >
-            <Link to="/experience">Experience</Link>
+            <Link
+              to="/experience"
+              className={
+                useLocation().pathname === '/experience'
+                  ? ''
+                  : 'custom-underline'
+              }
+            >
+              Experience
+            </Link>
           </li>
           <li
-            className={
-              useLocation().pathname === '/contacts' ? 'uk-active activeCustom' : ''
-            }
+            className={[
+              'box',
+              useLocation().pathname === '/contacts'
+                ? 'uk-active activeCustom'
+                : ''
+            ].join(' ')}
           >
-            <Link to="/contacts">Contacts</Link>
+            <Link
+              to="/contacts"
+              className={
+                useLocation().pathname === '/contacts' ? '' : 'custom-underline'
+              }
+            >
+              Contacts
+            </Link>
           </li>
         </ul>
       </div>

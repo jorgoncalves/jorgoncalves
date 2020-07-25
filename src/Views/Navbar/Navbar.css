@@ -1,3 +1,35 @@
-.activeCustom{
+.navbarCustom {
+  background-color: var(--nav-footer-bg-color) !important;
+}
+
+
+.activeCustom {
   font-weight: 500;
+}
+
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.box .custom-underline::after {
+  top: 65%;
+  height: 2px;
+  width: 0%;
+  left: 15%;
+  background-color: var(--nav-hover-color);
+  transition: 0.25s ease all .15s;
+}
+
+.box:hover .custom-underline::after {
+  width: 70%;
+  transition: 0.2s ease all;
 }
