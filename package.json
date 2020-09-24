@@ -1,6 +1,6 @@
 {
-  "homepage": "http://jorgoncalves.github.io/site",
-  "name": "site",
+  "homepage": "https://jorgoncalves.github.io/",
+  "name": "jorgoncalves.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
